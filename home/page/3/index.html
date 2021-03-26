@@ -113,7 +113,7 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/e2b2tmoddinghelper/home/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+    <a href="/e2b2tmoddinghelper/index.html" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -153,7 +153,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://bot-debug.github.io/e2b2tmoddinghelper/forge%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/">
+    <link itemprop="mainEntityOfPage" href="https://bot-debug.github.io/e2b2tmoddinghelper/2b2t%E5%BC%80%E5%8F%91%E8%80%85%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/e2b2tmoddinghelper/images/avatar.gif">
@@ -167,7 +167,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/e2b2tmoddinghelper/forge%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/" class="post-title-link" itemprop="url">forge编译环境配置疑难杂症</a>
+            <a href="/e2b2tmoddinghelper/2b2t%E5%BC%80%E5%8F%91%E8%80%85%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/" class="post-title-link" itemprop="url">2b2t开发者网址导航</a>
         </h2>
 
         <div class="post-meta">
@@ -177,14 +177,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-01-24 00:00:00" itemprop="dateCreated datePublished" datetime="2021-01-24T00:00:00+08:00">2021-01-24</time>
+              <time title="创建时间：2021-01-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-01-26T00:00:00+08:00">2021-01-26</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-23 22:59:03" itemprop="dateModified" datetime="2021-03-23T22:59:03+08:00">2021-03-23</time>
+                <time title="修改时间：2021-03-23 23:09:42" itemprop="dateModified" datetime="2021-03-23T23:09:42+08:00">2021-03-23</time>
               </span>
 
           
@@ -198,27 +198,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-配置教程："><a href="#1-配置教程：" class="headerlink" title="1.配置教程："></a>1.配置教程：</h2><p><a target="_blank" rel="noopener" href="https://harbinger.covertdragon.team/chapter-02/">harbinger-1.12.2开发指南</a></p>
-<h2 id="2-疑难解答"><a href="#2-疑难解答" class="headerlink" title="2.疑难解答:"></a>2.疑难解答:</h2><h4 id="Q-read-time-out-could-not-get-resource等网络连接问题"><a href="#Q-read-time-out-could-not-get-resource等网络连接问题" class="headerlink" title="Q:read time out/could not get resource等网络连接问题"></a>Q:read time out/could not get resource等网络连接问题</h4><h5 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h5><h5 id="方法一：使用ssr-v2ray解决（推荐）"><a href="#方法一：使用ssr-v2ray解决（推荐）" class="headerlink" title="方法一：使用ssr/v2ray解决（推荐）"></a>方法一：使用ssr/v2ray解决（推荐）</h5><h5 id="gradle不会自动使用系统代理，所以需要自己配置"><a href="#gradle不会自动使用系统代理，所以需要自己配置" class="headerlink" title="gradle不会自动使用系统代理，所以需要自己配置"></a>gradle不会自动使用系统代理，所以需要自己配置</h5><p>在gradle.properties（位于mdk根目录）中加入（应该自带<code>org.gradle.jvmargs</code>变量，在后面加参数即可）</p>
-<blockquote>
-<p>如果使用ssr:</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p><code>org.gradle.jvmargs=-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>如果使用v2ray:</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p><code>org.gradle.jvmargs=-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=10808</code></p>
-</blockquote>
-</blockquote>
-<p>貌似有个免费ssr(专门加速forgegradle)：<a target="_blank" rel="noopener" href="https://fmltutor.ustc-zzzz.net/1.1-%E9%85%8D%E7%BD%AE%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83.html#%E9%85%8D%E7%BD%AE%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83">1.8.9FML MOD开发教程(停更)</a></p>
-<h5 id="方法二：使用镜像源（网速不稳定）"><a href="#方法二：使用镜像源（网速不稳定）" class="headerlink" title="方法二：使用镜像源（网速不稳定）"></a>方法二：使用镜像源（网速不稳定）</h5><p><a target="_blank" rel="noopener" href="http://blog.hakugyokurou.net/?p=1347"><del>FMM源配置教程</del>（FMM源已死）</a></p>
-<h4 id="PS-其他错误99-可以通过gradlew-clean清除gradle缓存重新构建来解决。"><a href="#PS-其他错误99-可以通过gradlew-clean清除gradle缓存重新构建来解决。" class="headerlink" title="PS:其他错误99%可以通过gradlew clean清除gradle缓存重新构建来解决。"></a>PS:其他错误99%可以通过gradlew clean清除gradle缓存重新构建来解决。</h4>
+          <h2 id="1-编译环境类："><a href="#1-编译环境类：" class="headerlink" title="1.编译环境类："></a>1.编译环境类：</h2><p>forge官网: <a target="_blank" rel="noopener" href="https://files.minecraftforge.net/">https://files.minecraftforge.net/</a><br>IDEA官网：问百度</p>
+<h2 id="2-反编译类"><a href="#2-反编译类" class="headerlink" title="2.反编译类:"></a>2.反编译类:</h2><p>1.mod反编译<strong>神器</strong>(自动替换混淆的函数名)-BON/BON2:<a target="_blank" rel="noopener" href="https://github.com/tterrag1098/BON2">BON2</a>（应该是这个，但版本号却奇怪的倒退了）<br>2.反编译器-Bytecode Viewer: <a target="_blank" rel="noopener" href="https://github.com/Konloch/bytecode-viewer/">Bytecode Viewer</a><br>3.java字节码编辑器-Recaf: <a target="_blank" rel="noopener" href="https://github.com/Col-E/Recaf">Recaf</a><br>4.常见Java混淆器破解器(支持的混淆器包括ZKM,具体详见网址)-Java Deobfuscator: <a target="_blank" rel="noopener" href="https://github.com/java-deobfuscator/deobfuscator">Java Deobfuscator</a></p>
+<h2 id="3-混淆类："><a href="#3-混淆类：" class="headerlink" title="3.混淆类："></a>3.混淆类：</h2><p>1.基础java混淆器(自己手动配置效果更佳)-Java Obfuscator: <a target="_blank" rel="noopener" href="https://github.com/superblaubeere27/obfuscator">Jobf</a><br>2.更高级些的Radon(比Jobf多了些混淆功能，具体详见网址):<a target="_blank" rel="noopener" href="https://github.com/ItzSomebody/radon">Radon</a><br>3.100美刀-paramorphism:<a target="_blank" rel="noopener" href="https://paramorphism.dev/">paramorphism</a><br>4.eskid:</p>
+
       
     </div>
 
@@ -236,7 +219,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/e2b2tmoddinghelper/home/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/e2b2tmoddinghelper/home/">1</a><a class="page-number" href="/e2b2tmoddinghelper/home/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/e2b2tmoddinghelper/home/page/4/">4</a><a class="extend next" rel="next" href="/e2b2tmoddinghelper/home/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/e2b2tmoddinghelper/home/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/e2b2tmoddinghelper/home/">1</a><a class="page-number" href="/e2b2tmoddinghelper/home/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/e2b2tmoddinghelper/home/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/e2b2tmoddinghelper/home/page/6/">6</a><a class="extend next" rel="next" href="/e2b2tmoddinghelper/home/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -302,12 +285,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/e2b2tmoddinghelper/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
